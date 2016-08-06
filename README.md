@@ -8,11 +8,6 @@ Concurrent control of fibers on a per-pool basis with [synchronize.js](http://al
 Construct a pool object, and create fibers attached to the pool, with a
 configurable cap on the number of active fibers running on the pool.
 
-If this strikes you as similar to
-[batch](https://github.com/visionmedia/batch/), that's because it is. It
-differs, however, in that it has built-in backpressure, to simplify writing
-concurrent code that avoids loading everything into memory.
-
 ```js
 var sync = require('synchronize');
 var SyncPool = require('synchronize-pool');
@@ -46,6 +41,11 @@ sync.fiber(function() {
 });
 ```
 
+If this strikes you as similar to
+[batch](https://github.com/visionmedia/batch/), that's because it is. It
+differs, however, in that it has built-in backpressure, to simplify writing
+concurrent code that avoids loading everything into memory.
+
 Install
 -------
 
@@ -56,7 +56,7 @@ $ npm install synchronize-pool
 API
 ---
 
-### SyncPool(concurrentFactor)
+### new SyncPool(concurrentFactor)
 
 This is a constructor, and must be called with `new`.
 
@@ -122,9 +122,6 @@ this name isn't super accurate.
 ### Ew.
 
 `¯\_(ツ)_/¯`
-
-License
--------
 
 License
 -------
