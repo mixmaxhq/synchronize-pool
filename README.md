@@ -113,7 +113,7 @@ console.log(errors);
 FAQ
 ---
 
-### Why "sychronize-pool?"
+### Why "synchronize-pool?"
 
 If you have a better name, feel free to open a [pull
 request](https://github.com/mixmaxhq/synchronize-pool/pulls). It's true that
