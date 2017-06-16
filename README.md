@@ -88,7 +88,7 @@ you're doing, **do not call join() if you intend to call start() again**.
 
 ```js
 pool.start(function() {
-  sync.await(setTimeout(sync.defer(), 1000)(;
+  sync.await(setTimeout(sync.defer(), 1000));
 });
 
 pool.join();
